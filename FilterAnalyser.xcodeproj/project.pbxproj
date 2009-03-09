@@ -1,0 +1,203 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0174B9420F65D16C0069B9E2 /* FilterAnalyser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0174B9350F65D15A0069B9E2 /* FilterAnalyser.cpp */; };
+		0174B95A0F65D2A90069B9E2 /* LowPassFilter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0174B9590F65D2A90069B9E2 /* LowPassFilter.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0174B9350F65D15A0069B9E2 /* FilterAnalyser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterAnalyser.cpp; sourceTree = "<group>"; };
+		0174B93B0F65D1680069B9E2 /* FilterAnalyser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterAnalyser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0174B93E0F65D1680069B9E2 /* FilterAnalyser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FilterAnalyser-Info.plist"; sourceTree = "<group>"; };
+		0174B9570F65D2A90069B9E2 /* LowPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowPassFilter.h; sourceTree = "<group>"; };
+		0174B9580F65D2A90069B9E2 /* Synth--.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Synth--.h"; sourceTree = "<group>"; };
+		0174B9590F65D2A90069B9E2 /* LowPassFilter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LowPassFilter.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0174B9390F65D1680069B9E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0174B9280F65D1430069B9E2 = {
+			isa = PBXGroup;
+			children = (
+				0174B9350F65D15A0069B9E2 /* FilterAnalyser.cpp */,
+				0174B9570F65D2A90069B9E2 /* LowPassFilter.h */,
+				0174B9580F65D2A90069B9E2 /* Synth--.h */,
+				0174B9590F65D2A90069B9E2 /* LowPassFilter.cc */,
+				0174B93C0F65D1680069B9E2 /* Products */,
+				0174B93E0F65D1680069B9E2 /* FilterAnalyser-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		0174B93C0F65D1680069B9E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0174B93B0F65D1680069B9E2 /* FilterAnalyser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0174B93A0F65D1680069B9E2 /* FilterAnalyser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0174B9410F65D1690069B9E2 /* Build configuration list for PBXNativeTarget "FilterAnalyser" */;
+			buildPhases = (
+				0174B9370F65D1680069B9E2 /* Resources */,
+				0174B9380F65D1680069B9E2 /* Sources */,
+				0174B9390F65D1680069B9E2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilterAnalyser;
+			productName = FilterAnalyser;
+			productReference = 0174B93B0F65D1680069B9E2 /* FilterAnalyser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0174B92A0F65D1430069B9E2 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0174B92D0F65D1430069B9E2 /* Build configuration list for PBXProject "FilterAnalyser" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 0174B9280F65D1430069B9E2;
+			productRefGroup = 0174B93C0F65D1680069B9E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0174B93A0F65D1680069B9E2 /* FilterAnalyser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0174B9370F65D1680069B9E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0174B9380F65D1680069B9E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0174B9420F65D16C0069B9E2 /* FilterAnalyser.cpp in Sources */,
+				0174B95A0F65D2A90069B9E2 /* LowPassFilter.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0174B92B0F65D1430069B9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		0174B92C0F65D1430069B9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		0174B93F0F65D1690069B9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "FilterAnalyser-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					Accelerate,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FilterAnalyser;
+			};
+			name = Debug;
+		};
+		0174B9400F65D1690069B9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "FilterAnalyser-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					Accelerate,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FilterAnalyser;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0174B92D0F65D1430069B9E2 /* Build configuration list for PBXProject "FilterAnalyser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0174B92B0F65D1430069B9E2 /* Debug */,
+				0174B92C0F65D1430069B9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0174B9410F65D1690069B9E2 /* Build configuration list for PBXNativeTarget "FilterAnalyser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0174B93F0F65D1690069B9E2 /* Debug */,
+				0174B9400F65D1690069B9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0174B92A0F65D1430069B9E2 /* Project object */;
+}
