@@ -1,0 +1,189 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01C5799B11078F63001C79CD /* pyhost.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5799111078F58001C79CD /* pyhost.c */; };
+		01C57A2B1107B899001C79CD /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C579A511078FCA001C79CD /* Python.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01C5799111078F58001C79CD /* pyhost.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pyhost.c; sourceTree = "<group>"; };
+		01C5799511078F5E001C79CD /* pyhost */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pyhost; sourceTree = BUILT_PRODUCTS_DIR; };
+		01C579A511078FCA001C79CD /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = /System/Library/Frameworks/Python.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01C5799311078F5E001C79CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C57A2B1107B899001C79CD /* Python.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01C5798411078F45001C79CD = {
+			isa = PBXGroup;
+			children = (
+				01C5799C11078F66001C79CD /* Source */,
+				01C579A411078FB8001C79CD /* Frameworks & Libraries */,
+				01C5799611078F5E001C79CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01C5799611078F5E001C79CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01C5799511078F5E001C79CD /* pyhost */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01C5799C11078F66001C79CD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				01C5799111078F58001C79CD /* pyhost.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		01C579A411078FB8001C79CD /* Frameworks & Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				01C579A511078FCA001C79CD /* Python.framework */,
+			);
+			name = "Frameworks & Libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01C5799411078F5E001C79CD /* pyhost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01C5799A11078F5F001C79CD /* Build configuration list for PBXNativeTarget "pyhost" */;
+			buildPhases = (
+				01C5799211078F5E001C79CD /* Sources */,
+				01C5799311078F5E001C79CD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pyhost;
+			productName = pyhost;
+			productReference = 01C5799511078F5E001C79CD /* pyhost */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01C5798611078F45001C79CD /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 01C5798911078F45001C79CD /* Build configuration list for PBXProject "pyhost" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 01C5798411078F45001C79CD;
+			productRefGroup = 01C5799611078F5E001C79CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01C5799411078F5E001C79CD /* pyhost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01C5799211078F5E001C79CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C5799B11078F63001C79CD /* pyhost.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01C5798711078F45001C79CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				GCC_VERSION = 4.0;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		01C5798811078F45001C79CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				GCC_VERSION = 4.0;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+		01C5799811078F5F001C79CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01C5799911078F5F001C79CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01C5798911078F45001C79CD /* Build configuration list for PBXProject "pyhost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01C5798711078F45001C79CD /* Debug */,
+				01C5798811078F45001C79CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01C5799A11078F5F001C79CD /* Build configuration list for PBXNativeTarget "pyhost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01C5799811078F5F001C79CD /* Debug */,
+				01C5799911078F5F001C79CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01C5798611078F45001C79CD /* Project object */;
+}
