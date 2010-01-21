@@ -5,19 +5,7 @@
 
 #include <Python/Python.h>
 
-#define PYTHONLIB_PATH "/System/Library/Frameworks/Python.framework/Python"
-
 #define SIZEOF_STATIC_ARRAY( a ) ( sizeof((a)) / sizeof((a)[0]) )
-
-typedef struct
-{
-	void (* Py_Initialize)(void);
-	void (* Py_Finalize)(void);
-	void (* PySys_SetArgv)(int, char **);
-	void (* PySys_SetPath)(char *);
-	int  (* PyRun_SimpleStringFlags)(const char *, PyCompilerFlags *);
-}
-python_functions_t;
 
 char *pythonArgv[] = {
 	"arg0",
@@ -31,16 +19,37 @@ const char *pythonScript =
 "print sys.argv\n"
 ;
 
+#if 1
+
+// **** THE EASY WAY :-) ****
+
 int main()
 {
-	// **** THE EASY WAY :-) ****
-	
-	//	Py_Initialize();
-	//	PyRun_SimpleString("print \"Hello, world!\"");
-	//	Py_Finalize();
-	
-	// **** THE HARD WAY :-\ ****
-	
+	Py_Initialize();
+	PySys_SetArgv(SIZEOF_STATIC_ARRAY(pythonArgv), pythonArgv);
+	PyRun_SimpleStringFlags(pythonScript, NULL);
+	Py_Finalize();
+	return 0;
+}
+
+#else
+
+// **** THE HARD WAY :-\ ****
+
+#define PYTHONLIB_PATH "/System/Library/Frameworks/Python.framework/Python"
+
+typedef struct
+{
+	void (* Py_Initialize)(void);
+	void (* Py_Finalize)(void);
+	void (* PySys_SetArgv)(int, char **);
+	void (* PySys_SetPath)(char *);
+	int  (* PyRun_SimpleStringFlags)(const char *, PyCompilerFlags *);
+}
+python_functions_t;
+
+int main()
+{
 	//
 	// WARNING: Should use NSCreateObjectFileImageFromFile instead
 	// http://developer.apple.com/mac/library/technotes/tn2002/tn2071.html#Section6
@@ -69,3 +78,6 @@ int main()
 	
 	return 0;
 }
+
+#endif
+
