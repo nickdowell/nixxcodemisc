@@ -20,14 +20,13 @@
 	
 	oserr = IconRefToIconFamily(iconRef, kSelectorAllAvailableData, &iconFamily);
 	NSAssert(oserr == noErr, @"IconRefToIconFamily() failed");
-	NSAssert((*iconFamily)->resourceType == NSSwapHostIntToBig('icns'), @"");
+	NSAssert(NSSwapBigIntToHost(iconFamily[0]->resourceType) == 'icns', @"IconFamily resourceType mismatch");
 	
 	oserr = ReleaseIconRef(iconRef);
 	NSAssert(oserr == noErr, @"ReleaseIconRef() failed");
 	iconRef = NULL;
 	
-	SInt32 resourceSizeBigEndian = iconFamily[0]->resourceSize;
-	NSUInteger length = NSSwapBigIntToHost(resourceSizeBigEndian);
+	NSUInteger length = NSSwapBigIntToHost(iconFamily[0]->resourceSize);
 	iconData = [NSData dataWithBytes:*iconFamily length:length];
 	NSAssert(iconData != nil, @"[NSData dataWithBytes:] failed");
 	
